@@ -15,6 +15,6 @@ dist:
 	gpg --detach-sign --use-agent archlinuxarm-keyring-$(V).tar.gz
 
 upload:
-	scp archlinuxarm-keyring-$(V).tar.gz archlinuxarm-keyring-$(V).tar.gz.sig archlinuxarm.org:/www/src
+	scp archlinuxarm-keyring-$(V).tar.gz archlinuxarm-keyring-$(V).tar.gz.sig leming@archlinuxarm.org:www/src
 
 .PHONY: install uninstall dist upload
